@@ -1,0 +1,20 @@
+.menu {
+  margin-left: auto;
+  font-family: $overpass-mono;
+  text-transform: uppercase;
+  @include cleartext;
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 1em 1.5em;
+
+    &.active {
+      background-color: $pink;
+      color: #fff;
+    }
+  }
+}
