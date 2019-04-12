@@ -463,10 +463,11 @@ h6, .h6 {
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
+  .menu li, .menu a {
+    display: block; }
   .menu li {
-    display: inline-block; }
+    display: block; }
   .menu a {
-    display: block;
     padding: 1em 1.5em; }
     .menu a.active {
       background-color: #f54768;
@@ -514,6 +515,11 @@ body {
   font: normal 1.6em/1.8 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 main {
-  max-width: 60em;
-  margin: 0 auto;
   padding: 6em 0 0 0; }
+  @media (min-width: 800px) {
+    main {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 32rem 1fr;
+          grid-template-columns: 32rem 1fr;
+      grid-column-gap: 6rem; } }

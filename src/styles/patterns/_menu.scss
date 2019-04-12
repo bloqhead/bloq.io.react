@@ -4,12 +4,15 @@
   text-transform: uppercase;
   @include cleartext;
 
+  li, a {
+    display: block;
+  }
+
   li {
-    display: inline-block;
+    display: block;
   }
 
   a {
-    display: block;
     padding: 1em 1.5em;
 
     &.active {

@@ -1,7 +1,7 @@
 {
   "name": "bloq.io.react",
   "author": "Daryn St. Pierre",
-  "license": "IDCTBH",
+  "license": "ISC",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {

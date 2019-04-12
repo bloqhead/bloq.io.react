@@ -14,7 +14,8 @@ export default class Main extends Component {
     return (
       <HashRouter>
         <main>
-          <header>
+
+          <div className="sidebar">
             <NavLink exact to="/" className="logo">
               <img src={Logo}/>
             </NavLink>
@@ -23,12 +24,14 @@ export default class Main extends Component {
               <li><NavLink to="/work" className="menu__link">Work</NavLink></li>
               <li><NavLink to="/more" className="menu__link">More</NavLink></li>
             </ul>
-          </header>
+          </div>
+
           <div className="content">
             <Route exact path="/" component={Home}/>
             <Route path="/work" component={Work}/>
             <Route path="/more" component={More}/>
           </div>
+
           <footer>
             <p className="copyright">&copy; <NavLink to="/">bloq.io</NavLink> {new Date().getFullYear()}</p>
             <ul className="social">
@@ -36,6 +39,7 @@ export default class Main extends Component {
               <li><a href="https://github.com/bloqhead">Github</a></li>
             </ul>
           </footer>
+
         </main>
       </HashRouter>
     );

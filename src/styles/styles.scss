@@ -3,7 +3,7 @@
 @import "patterns/type";
 @import "patterns/brand";
 @import "patterns/menu";
-@import "patterns/header";
+@import "patterns/sidebar";
 @import "patterns/footer";
 @import "patterns/social";
 @import "patterns/intro";
@@ -26,9 +26,15 @@ body {
 }
 
 main {
-  max-width: 60em;
-  margin: 0 auto;
+  // max-width: 60em;
+  // margin: 0 auto;
   padding: 6em 0 0 0;
+
+  @media #{$bp-medium} {
+    display: grid;
+    grid-template-columns: 32rem 1fr;
+    grid-column-gap: 6rem;
+  }
 }
 
 #app {
